@@ -1,4 +1,4 @@
-package com.jordivilagut.dependencyinjector.injector;
+package injector;
 
 public class Bind<T, U extends T> {
 

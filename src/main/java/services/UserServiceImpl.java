@@ -1,11 +1,10 @@
-package com.jordivilagut.dependencyinjector.services;
+package services;
 
-import com.jordivilagut.dependencyinjector.model.User;
+import model.User;
 
 public class UserServiceImpl implements UserService {
 
-    public UserServiceImpl() {
-    }
+    public UserServiceImpl() {}
 
     public User getUser(String id) {
         return new User(id, "user " + id);

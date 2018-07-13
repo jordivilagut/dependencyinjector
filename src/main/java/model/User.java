@@ -1,4 +1,4 @@
-package com.jordivilagut.dependencyinjector.model;
+package model;
 
 public class User {
 

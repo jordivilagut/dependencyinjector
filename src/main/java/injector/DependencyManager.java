@@ -1,15 +1,15 @@
-package com.jordivilagut.dependencyinjector.injector;
+package injector;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DependencyManager<T, U extends T> implements Injector {
+public class DependencyManager implements Injector {
 
-    private Map<Class<T>, Class<U>> bindings;
+    private Map<Class, Class> bindings;
 
     public DependencyManager() {
-        this.bindings = new HashMap<Class<T>, Class<U>>();
+        this.bindings = new HashMap<Class, Class>();
     }
 
     /**
@@ -18,7 +18,7 @@ public class DependencyManager<T, U extends T> implements Injector {
      *
      * The destination type should have only one constructor.
      */
-    public void bind(Class<T> requested, Class<U> destination) {
+    public <T, U extends T> void bind(Class<T> requested, Class<U> destination) {
         bindings.put(requested, destination);
     }
 

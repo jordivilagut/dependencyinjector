@@ -1,5 +1,4 @@
-package com.jordivilagut.dependencyinjector.injector;
-
+package injector;
 
 /**
  * Injector can return object instances.

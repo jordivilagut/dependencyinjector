@@ -1,8 +1,8 @@
-package com.jordivilagut.dependencyinjector.services;
+package services;
 
-import com.jordivilagut.dependencyinjector.errors.UserNotFoundException;
-import com.jordivilagut.dependencyinjector.model.User;
-import com.jordivilagut.dependencyinjector.model.Ticket;
+import errors.UserNotFoundException;
+import model.Ticket;
+import model.User;
 
 import java.util.Arrays;
 import java.util.List;

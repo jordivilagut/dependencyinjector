@@ -1,9 +1,8 @@
-package com.jordivilagut.dependencyinjector.services;
+package services;
 
-import com.jordivilagut.dependencyinjector.model.User;
+import model.User;
 
 public interface UserService {
 
     User getUser(String id);
-
 }

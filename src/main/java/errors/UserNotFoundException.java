@@ -1,7 +1,6 @@
-package com.jordivilagut.dependencyinjector.errors;
+package errors;
 
 public class UserNotFoundException extends RuntimeException {
-
 
     private String userId;
 
