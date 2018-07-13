@@ -19,7 +19,7 @@ public class TicketServiceImpl implements TicketService {
 
         final User user = userService.getUser(userId);
         if (user != null) {
-            return Arrays.asList(new Ticket());
+            return Arrays.asList(new Ticket("1", 21.35));
         } else {
             throw new UserNotFoundException(userId);
         }
