@@ -1,7 +1,10 @@
 package injector;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Parameter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DependencyManager implements Injector {
@@ -33,6 +36,12 @@ public class DependencyManager implements Injector {
 
             // TODO: this constructor may have arguments
             // how to get objects of those classes to pass
+
+            List<Parameter> arguments = new ArrayList<Parameter>();
+
+            for (Parameter argument : constructor.getParameters()) {
+                arguments.add(argument);
+            }
 
 
             return (T) constructor.newInstance();
